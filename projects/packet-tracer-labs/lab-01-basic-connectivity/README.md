@@ -90,5 +90,9 @@ Ping sends a request to another device and waits for a reply to verify connectiv
 
 ---
 
+## Key Takeaway
+
+Devices within the same network can communicate directly through a switch without requiring a router.
+
 ## Conclusion
 This lab establishes the foundation of networking by demonstrating basic device communication within a LAN environment.
