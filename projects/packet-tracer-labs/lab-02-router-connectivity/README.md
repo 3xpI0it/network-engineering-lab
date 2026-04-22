@@ -46,115 +46,19 @@ PC0 ─── Switch ─── Router ─── Switch ─── PC1
 ---
 
 ## Router Configuration
-``# Lab 02: Router Connectivity
-
-## Overview
-This lab demonstrates communication between devices in different networks using a router. It introduces routing, default gateways, and inter-network communication.
-
----
-
-## Topology
-PC0 ─── Switch ─── Router ─── Switch ─── PC1
-
-![Topology](router-connectivity.png)
-
----
-
-## Devices Used
-- 2 × PCs (PC0, PC1)  
-- 2 × Switches (2960)  
-- 1 × Router (2911 / 1941)  
-
----
-
-## Network Configuration
-
-### Network 1 (Left Side)
-#### PC0
-- IP Address: 192.168.1.1  
-- Subnet Mask: 255.255.255.0  
-- Default Gateway: 192.168.1.254  
-
-#### Router (G0/0)
-- IP Address: 192.168.1.254  
-- Subnet Mask: 255.255.255.0  
-
----
-
-### Network 2 (Right Side)
-#### PC1
-- IP Address: 192.168.2.1  
-- Subnet Mask: 255.255.255.0  
-- Default Gateway: 192.168.2.254  
-
-#### Router (G0/1)
-- IP Address: 192.168.2.254  
-- Subnet Mask: 255.255.255.0  
-
----
-
-## Router Configuration
-```
-# Lab 02: Router Connectivity
-
-## Overview
-This lab demonstrates communication between devices in different networks using a router. It introduces routing, default gateways, and inter-network communication.
-
----
-
-## Topology
-PC0 ─── Switch ─── Router ─── Switch ─── PC1
-
-![Topology](router-connectivity.png)
-
----
-
-## Devices Used
-- 2 × PCs (PC0, PC1)  
-- 2 × Switches (2960)  
-- 1 × Router (2911 / 1941)  
-
----
-
-## Network Configuration
-
-### Network 1 (Left Side)
-#### PC0
-- IP Address: 192.168.1.1  
-- Subnet Mask: 255.255.255.0  
-- Default Gateway: 192.168.1.254  
-
-#### Router (G0/0)
-- IP Address: 192.168.1.254  
-- Subnet Mask: 255.255.255.0  
-
----
-
-### Network 2 (Right Side)
-#### PC1
-- IP Address: 192.168.2.1  
-- Subnet Mask: 255.255.255.0  
-- Default Gateway: 192.168.2.254  
-
-#### Router (G0/1)
-- IP Address: 192.168.2.254  
-- Subnet Mask: 255.255.255.0  
-
----
-
-## Router Configuration
 
 ```
 enable
 configure terminal
+
 interface g0/0
 ip address 192.168.1.254 255.255.255.0
 no shutdown
+
 interface g0/1
 ip address 192.168.2.254 255.255.255.0
 no shutdown
 ```
-
 
 ---
 
