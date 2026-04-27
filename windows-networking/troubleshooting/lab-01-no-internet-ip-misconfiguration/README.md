@@ -66,7 +66,7 @@ After fixing the configuration:
 - Internet connectivity restored  
 - Ping successful  
 
-![Connectivity Restored](05-connectivity-restore.png)
+![Connectivity Restored](05-connectivity-restored.png)
 
 ---
 
